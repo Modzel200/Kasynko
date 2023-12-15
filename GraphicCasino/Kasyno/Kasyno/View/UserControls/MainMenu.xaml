@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <ListBox x:Name="gameListBox" HorizontalAlignment="Center" VerticalAlignment="Center"
-                 BorderBrush="Blue" BorderThickness="2" Background="red" FontSize="30" FontFamily="Casino Regular"
+                 BorderBrush="Gold" BorderThickness="2" Foreground="Gold" Background="Black" FontSize="30" FontFamily="Casino Regular"
                  SelectionChanged="gameListBox_SelectionChanged"
                  PreviewMouseLeftButtonDown="gameListBox_PreviewMouseLeftButtonDown" Padding="20 50">
         <ListBoxItem Padding="10">Roulette</ListBoxItem>

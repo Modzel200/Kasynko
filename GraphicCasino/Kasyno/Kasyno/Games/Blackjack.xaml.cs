@@ -93,6 +93,8 @@ namespace Kasyno.Games
             MediaPlayer mplayer = new MediaPlayer();
             mplayer.Open(new Uri(AppDomain.CurrentDomain.BaseDirectory + "card.mp3"));
             mplayer.Play();
+            updateScore();
+            Thread.Sleep(200);
         }
         private void hitCard()
         {
@@ -107,20 +109,23 @@ namespace Kasyno.Games
             MediaPlayer mplayer = new MediaPlayer();
             mplayer.Open(new Uri(AppDomain.CurrentDomain.BaseDirectory + "card.mp3"));
             mplayer.Play();
+            updateScore();
+            Thread.Sleep(200);
         }
         private void whoIsWinner()
         {
             if (userScore > botScore)
             {
                 Won();
-            }
-            if (botScore > userScore)
+            } else
             {
-                loss();
-            }
-            if (userScore == botScore)
-            {
-                draw();
+                if (userScore < botScore)
+                {
+                    loss();
+                } else
+                {
+                    draw();
+                }
             }
         }
         private int higerThanTO()
@@ -135,6 +140,16 @@ namespace Kasyno.Games
                 Won();
                 return 1;
             }
+            if(userScore == 21)
+            {
+                Won();
+                return 1;
+            }
+            if(botScore == 21)
+            {
+                loss();
+                return -1;
+            }
             return 0;
         }
         private void loss()
@@ -147,7 +162,8 @@ namespace Kasyno.Games
             initbutton.Visibility = Visibility.Visible;
             hitbj.Visibility = Visibility.Hidden;
             standbj.Visibility = Visibility.Hidden;
-            bigWin.Visibility = Visibility.Hidden;
+            info.Text = "Przegrana";
+            info.Visibility = Visibility.Visible;
         }
         private void draw()
         {
@@ -160,21 +176,23 @@ namespace Kasyno.Games
             initbutton.Visibility = Visibility.Visible;
             hitbj.Visibility = Visibility.Hidden;
             standbj.Visibility = Visibility.Hidden;
-            bigWin.Visibility = Visibility.Hidden;
+            info.Text = "Remis";
+            info.Visibility = Visibility.Visible;
         }
         private void Won()
         {
             userScore = 0;
             botScore = 0;
-            updateScore();
+            initList();
+            account.addBalance(double.Parse(initbet.Text, CultureInfo.InvariantCulture.NumberFormat) * 2);
             inittxt.Visibility = Visibility.Visible;
             initbet.Visibility = Visibility.Visible;
             initbutton.Visibility = Visibility.Visible;
             hitbj.Visibility = Visibility.Hidden;
             standbj.Visibility = Visibility.Hidden;
-            bigWin.Visibility = Visibility.Hidden;
-            account.addBalance(double.Parse(initbet.Text, CultureInfo.InvariantCulture.NumberFormat) * 2);
             accBalance.Text = "Balans: " + account.getBalance();
+            info.Text = "Wygrana";
+            info.Visibility = Visibility.Visible;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -187,26 +205,17 @@ namespace Kasyno.Games
             hitbj.Visibility = Visibility.Visible;
             standbj.Visibility = Visibility.Visible;
             bjtable.Visibility = Visibility.Visible;
-            bigWin.Visibility = Visibility.Hidden;
             updateScore();
             account.removeBalance(double.Parse(initbet.Text, CultureInfo.InvariantCulture.NumberFormat));
             accBalance.Text = "Balans: " + account.getBalance();
             hitCard();
-            updateScore();
-            Thread.Sleep(200);
             shouldEnemyHit();
-            updateScore();
-            Thread.Sleep(200);
             higerThanTO();
         }
         private void Button_Click_Hit(object sender, RoutedEventArgs e)
         {
             hitCard();
-            updateScore();
-            Thread.Sleep(200);
             shouldEnemyHit();
-            updateScore();
-            Thread.Sleep(200);
             higerThanTO();
         }
         private void updateScore()
@@ -220,7 +229,7 @@ namespace Kasyno.Games
             {
                 shouldEnemyHit();
                 updateScore();
-                //Thread.Sleep(200);
+                Thread.Sleep(200);
             }
             if(higerThanTO() == 0)
             {

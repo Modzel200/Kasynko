@@ -7,6 +7,11 @@
     mc:Ignorable="d"
     Title="BlackJack" Height="700" Width="1200">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg">
+
+            </ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"></RowDefinition>
             <RowDefinition Height="80*"></RowDefinition>
@@ -16,9 +21,14 @@
                 <ColumnDefinition Width="80*"></ColumnDefinition>
                 <ColumnDefinition Width="20*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="red">BlackJack
-            </TextBlock>
-            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="blue" VerticalAlignment="Center"></TextBlock>
+            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="Black">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect>BlackJack</TextBlock>
+            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="White" VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect></TextBlock>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -27,10 +37,11 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Visibility="Visible">
                 <TextBlock FontSize="30" Visibility="Visible" Name="inittxt" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
-                <TextBox Name="initbet" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <Button Height="37" Visibility="Visible" Name="initbutton" Click="Button_Click" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Background="red">Zagraj</Button>
-                <Button Height="37" Name="hitbj" Visibility="Hidden" Click="Button_Click_Hit" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Background="red">Dobierz kartę</Button>
-                <Button Height="37" Visibility="Hidden" Name="standbj" Click="Button_Click_Stand" VerticalAlignment="Top" Margin="59,166,59,0" FontFamily="Casino Regular" FontSize="30" Background="red">Odpuść</Button>
+                <TextBox Name="initbet" Visibility="Visible" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
+                <Button Height="37" Visibility="Visible" Name="initbutton" Click="Button_Click" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Zagraj</Button>
+                <Button Height="37" Name="hitbj" Visibility="Hidden" Click="Button_Click_Hit" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Dobierz kartę</Button>
+                <Button Height="37" Visibility="Hidden" Name="standbj" Click="Button_Click_Stand" VerticalAlignment="Top" Margin="59,166,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Odpuść</Button>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             <Grid Grid.Column="1" Name="bjtable">
@@ -43,9 +54,9 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Name="userScoreVis" HorizontalAlignment="Center" FontSize="30" FontFamily="Casino Regular" Foreground="Blue" Margin="0,0,0,222" Width="272" Grid.Row="1">Twoje punkty:</TextBlock>
+                <TextBlock Name="userScoreVis" HorizontalAlignment="Center" FontSize="30" FontFamily="Casino Regular" Foreground="Black" Margin="0,0,0,222" Width="272" Grid.Row="1">Twoje punkty:</TextBlock>
                 <Image Name="userThrow" Margin="294,51,294,0" Width="252" Height="174" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1"/>
-                <TextBlock Name="botScoreVis" HorizontalAlignment="Center" FontSize="30" FontFamily="Casino Regular" Foreground="Blue" RenderTransformOrigin="0.5,0.5" Margin="0,8,0,219" Grid.RowSpan="1" Width="291">
+                <TextBlock Name="botScoreVis" HorizontalAlignment="Center" FontSize="30" FontFamily="Casino Regular" Foreground="Black" RenderTransformOrigin="0.5,0.5" Margin="0,8,0,219" Grid.RowSpan="1" Width="291">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

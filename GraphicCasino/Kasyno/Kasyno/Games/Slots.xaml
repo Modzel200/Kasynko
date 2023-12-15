@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Slots" Height="700" Width="1200">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg">
+
+            </ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"></RowDefinition>
             <RowDefinition Height="80*"></RowDefinition>
@@ -16,8 +21,14 @@
                 <ColumnDefinition Width="80*"></ColumnDefinition>
                 <ColumnDefinition Width="20*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="red">Slots</TextBlock>
-            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="blue" VerticalAlignment="Center"></TextBlock>
+            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="Black">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect>Slots</TextBlock>
+            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="White" VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect></TextBlock>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -26,14 +37,30 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <TextBlock FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
-                <TextBox Name="bet" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Background="red">Zakręć</Button>
+                <TextBox Name="bet" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Zakręć</Button>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             <Grid Grid.Column="1">
-                <Image Visibility="Visible" Name="slot1" Margin="90,66,600,331" Source="/Games/coinslots.png" />
-                <Image Visibility="Visible" Name="slot3" Margin="600,66,90,331" Source="/Games/coinslots.png"/>
-                <Image Visibility="Visible" Name="slot2" Margin="345,66,345,331" Source="/Games/coinslots.png"/>
+                <Image Visibility="Visible" Name="slot1" Margin="0,66,620,331" Source="/Games/coinslots.png" HorizontalAlignment="Right" Width="150" />
+                <Image Visibility="Visible" Name="slot3" Margin="0,66,190,331" Source="/Games/coinslots.png" HorizontalAlignment="Right" Width="150"/>
+                <Image Visibility="Visible" Name="slot2" Margin="0,66,405,331" Source="/Games/coinslots.png" HorizontalAlignment="Right" Width="150"/>
+                <Rectangle Stroke="Black" Margin="0,49,591,314" HorizontalAlignment="Right" Width="208" StrokeThickness="4">
+                    <Rectangle.Effect>
+                        <DropShadowEffect/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Stroke="Black" Margin="0,49,376,314" HorizontalAlignment="Right" Width="208" StrokeThickness="4">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Stroke="Black" Margin="0,49,161,314" HorizontalAlignment="Right" Width="208" StrokeThickness="4">
+                <Rectangle.Effect>
+                    <DropShadowEffect/>
+                </Rectangle.Effect>
+                </Rectangle>
 
             </Grid>
         </Grid>
