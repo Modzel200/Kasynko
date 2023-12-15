@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Games\Blackjack.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Games\Craps.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Games\Roulette.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Games\Slots.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\MainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Games\Blackjack.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Games\Craps.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Games\Roulette.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Games\Slots.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

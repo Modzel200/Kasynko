@@ -1,0 +1,43 @@
+﻿<Window x:Class="Kasyno.Games.Roulette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kasyno.Games"
+        mc:Ignorable="d"
+        Title="Roulette" Height="700" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80*"></ColumnDefinition>
+                <ColumnDefinition Width="20*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="red">Roulette</TextBlock>
+            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="blue" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="70*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="80*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
+                <TextBox Name="bet" HorizontalAlignment="Center" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <TextBlock Grid.Row="1" FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Wybierz numer[0,36]: </TextBlock>
+                <TextBox Name="number" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="33" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <Button Height="30px" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="0px 100px 0px 0px" Grid.Row="1" FontFamily="Casino Regular" FontSize="30" Background="red">Spin</Button>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Blue"></TextBlock>
+            </Grid>
+            
+            <MediaElement Name="rouletteAnimation" Source="roulette-start.mp4" Grid.Column="1" LoadedBehavior="Play"></MediaElement>
+        </Grid>
+    </Grid>
+</Window>

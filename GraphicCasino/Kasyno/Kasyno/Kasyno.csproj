@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Games\appleslots.jpg" />
+    <None Remove="Games\barslots.jpg" />
+    <None Remove="Games\bellslots.jpg" />
+    <None Remove="Games\bjbackground.jpg" />
+    <None Remove="Games\cloverslots.jpg" />
+    <None Remove="Games\coinslots.png" />
+    <None Remove="Games\diamondslots.jpg" />
+    <None Remove="Games\grappesslots.jpg" />
+    <None Remove="Games\heartslots.jpg" />
+    <None Remove="Games\horseshoeslots.jpg" />
+    <None Remove="Games\orangeslots.jpg" />
+    <None Remove="Games\plumslots.jpg" />
+    <None Remove="Games\questionmarkslots.jpg" />
+    <None Remove="Games\sevenslots.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Games\bjbackground.jpg" />
+    <Resource Include="Games\coinslots.png" />
+  </ItemGroup>
+
+</Project>
