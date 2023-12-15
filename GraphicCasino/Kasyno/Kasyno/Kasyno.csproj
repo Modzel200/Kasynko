@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="background.jpg" />
     <None Remove="Games\appleslots.jpg" />
     <None Remove="Games\barslots.jpg" />
     <None Remove="Games\bellslots.jpg" />
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="background.jpg" />
     <Resource Include="Games\bjbackground.jpg" />
     <Resource Include="Games\coinslots.png" />
   </ItemGroup>

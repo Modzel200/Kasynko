@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Roulette" Height="700" Width="1200">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg">
+
+            </ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"></RowDefinition>
             <RowDefinition Height="80*"></RowDefinition>
@@ -16,8 +21,14 @@
                 <ColumnDefinition Width="80*"></ColumnDefinition>
                 <ColumnDefinition Width="20*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="red">Roulette</TextBlock>
-            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="blue" VerticalAlignment="Center"></TextBlock>
+            <TextBlock FontSize="60" HorizontalAlignment="Right" Margin="0 0 250 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="Black">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect>BlackJack</TextBlock>
+            <TextBlock Name="accBalance" Grid.Column="1" FontFamily="Casino Regular" FontSize="30" Foreground="White" VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gold"/>
+                </TextBlock.Effect></TextBlock>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -30,13 +41,13 @@
                     <RowDefinition Height="80*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <TextBlock FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
-                <TextBox Name="bet" HorizontalAlignment="Center" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <TextBlock Grid.Row="1" FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Wybierz numer[0,36]: </TextBlock>
-                <TextBox Name="number" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="33" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <Button Height="30px" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="0px 100px 0px 0px" Grid.Row="1" FontFamily="Casino Regular" FontSize="30" Background="red">Spin</Button>
-                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Blue"></TextBlock>
+                <TextBox Name="bet"  BorderBrush="Gold" HorizontalAlignment="Center" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <TextBlock Grid.Row="1" FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Wybierz numer[0,36]:</TextBlock>
+                <TextBox Name="number"  BorderBrush="Gold" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="33" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <Button Height="42" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="140,100,140,0" Grid.Row="1" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Spin</Button>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
             </Grid>
-            
+
             <MediaElement Name="rouletteAnimation" Source="roulette-start.mp4" Grid.Column="1" LoadedBehavior="Play"></MediaElement>
         </Grid>
     </Grid>
