@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Kasyno" xmlns:usercontrols="clr-namespace:Kasyno.View.UserControls"
         xmlns:userControls="clr-namespace:Kasyno.View.UserControls"
         mc:Ignorable="d"
-        Title="Royal Casino" Height="1000" Width="1650">
+        Title="Royal Casino" Height="1000" Width="1650" Icon="/coinslots.png">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/background.jpg">

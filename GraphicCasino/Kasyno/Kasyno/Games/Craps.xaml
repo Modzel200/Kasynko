@@ -36,10 +36,19 @@
                 <ColumnDefinition Width="70*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <TextBlock FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
+                <TextBlock FontSize="30" FontFamily="Casino Regular" FontWeight="Bold" HorizontalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect>Twoja stawka:</TextBlock>
                 <TextBox Name="bet" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" TextAlignment="Center"></TextBox>
-                <Button Height="41" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="140,100,140,0" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" Foreground="White" Background="Black">Rzut</Button>
-                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
+                <Button Height="41" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="140,100,140,0" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" Foreground="White" Background="Black">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </Button.Effect> Rzut</Button>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect></TextBlock>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             <Grid Grid.Column="1">

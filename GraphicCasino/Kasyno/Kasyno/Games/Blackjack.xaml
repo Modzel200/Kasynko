@@ -36,12 +36,27 @@
                 <ColumnDefinition Width="70*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Visibility="Visible">
-                <TextBlock FontSize="30" Visibility="Visible" Name="inittxt" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
+                <TextBlock FontSize="30" Visibility="Visible" Name="inittxt" FontFamily="Casino Regular" FontWeight="Bold" HorizontalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect>Twoja stawka:</TextBlock>
                 <TextBox Name="initbet" Visibility="Visible" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
-                <Button Height="37" Visibility="Visible" Name="initbutton" Click="Button_Click" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Zagraj</Button>
-                <Button Height="37" Name="hitbj" Visibility="Hidden" Click="Button_Click_Hit" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Dobierz kartę</Button>
-                <Button Height="37" Visibility="Hidden" Name="standbj" Click="Button_Click_Stand" VerticalAlignment="Top" Margin="59,166,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Odpuść</Button>
+                <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect></TextBlock>
+                <Button Height="37" Visibility="Visible" Name="initbutton" Click="Button_Click" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </Button.Effect> Zagraj</Button>
+                <Button Height="37" Name="hitbj" Visibility="Hidden" Click="Button_Click_Hit" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </Button.Effect> Dobierz kartę</Button>
+                <Button Height="37" Visibility="Hidden" Name="standbj" Click="Button_Click_Stand" VerticalAlignment="Top" Margin="59,166,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </Button.Effect> Odpuść</Button>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             <Grid Grid.Column="1" Name="bjtable">

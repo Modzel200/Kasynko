@@ -36,9 +36,15 @@
                 <ColumnDefinition Width="70*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <TextBlock FontSize="30" FontFamily="Casino Regular" HorizontalAlignment="Center">Twoja stawka:</TextBlock>
+                <TextBlock FontSize="30" FontWeight="Bold" FontFamily="Casino Regular" HorizontalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect>Twoja stawka:</TextBlock>
                 <TextBox Name="bet" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
-                <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">Zakręć</Button>
+                <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </Button.Effect> Zakręć</Button>
                 <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>

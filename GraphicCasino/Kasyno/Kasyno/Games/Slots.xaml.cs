@@ -84,6 +84,7 @@ namespace Kasyno.Games
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            timer = new DispatcherTimer();
             slot1.Visibility = Visibility.Visible;
             slot2.Visibility = Visibility.Visible;
             slot3.Visibility = Visibility.Visible;
