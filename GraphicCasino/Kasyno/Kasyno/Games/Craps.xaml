@@ -56,9 +56,15 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock HorizontalAlignment="Center" FontSize="45" FontFamily="Casino Regular" Foreground="Black">Rzut Gracza</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="45" FontWeight="Bold" FontFamily="Casino Regular" Foreground="Black">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect>Rzut Gracza</TextBlock>
                 <MediaElement Name="userThrow" VerticalAlignment="Center" Grid.Column="0" LoadedBehavior="Play"></MediaElement>
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center" FontSize="45" FontFamily="Casino Regular" Foreground="Black">Rzut Krupiera</TextBlock>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" FontSize="45" FontWeight="Bold" FontFamily="Casino Regular" Foreground="Black">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gold"/>
+                    </TextBlock.Effect>Rzut Krupiera</TextBlock>
                 <MediaElement Grid.Column="1" Name="botThrow" VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             </Grid>
         </Grid>

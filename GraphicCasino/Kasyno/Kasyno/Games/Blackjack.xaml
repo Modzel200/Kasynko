@@ -52,11 +52,11 @@
                 <Button Height="37" Name="hitbj" Visibility="Hidden" Click="Button_Click_Hit" VerticalAlignment="Top" Margin="59,99,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
                     <Button.Effect>
                         <DropShadowEffect Color="Gold"/>
-                    </Button.Effect> Dobierz kartę</Button>
+                    </Button.Effect> Dobierz karte</Button>
                 <Button Height="37" Visibility="Hidden" Name="standbj" Click="Button_Click_Stand" VerticalAlignment="Top" Margin="59,166,59,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
                     <Button.Effect>
                         <DropShadowEffect Color="Gold"/>
-                    </Button.Effect> Odpuść</Button>
+                    </Button.Effect> Odpusc</Button>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>
             <Grid Grid.Column="1" Name="bjtable">

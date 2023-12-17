@@ -62,7 +62,7 @@ namespace Kasyno.Games
             elements.Add(new SlotsElement(3, "Śliwka", "plumslots.png", 1.25));
             elements.Add(new SlotsElement(4, "Dzwon", "bellslots.png", 2));
             elements.Add(new SlotsElement(5, "Koniczyna", "cloverslots.png", random.NextDouble() + 2));
-            elements.Add(new SlotsElement(6, "Cytryna", "lemonslots.jpg", 2.33));
+            elements.Add(new SlotsElement(6, "Cytryna", "lemonslots.png", 2.33));
             elements.Add(new SlotsElement(7, "Moneta", "coinslots.png", 4.5));
             elements.Add(new SlotsElement(8, "Bar", "barslots.png", 1.33));
             elements.Add(new SlotsElement(9, "Jabłko", "appleslots.png", 3));
