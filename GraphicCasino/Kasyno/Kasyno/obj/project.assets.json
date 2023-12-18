@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
       "projectName": "Kasyno",
-      "projectPath": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Kasyno" xmlns:usercontrols="clr-namespace:Kasyno.View.UserControls"
         xmlns:userControls="clr-namespace:Kasyno.View.UserControls"
         mc:Ignorable="d"
-        Title="Royal Casino" Height="1000" Width="1650" Icon="/coinslots.png">
+        Title="Royal Casino" Height="1000" Width="1650" Icon="/coinslots.png"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/background.jpg">
@@ -18,20 +21,10 @@
             <RowDefinition Height="80*"></RowDefinition>
             <RowDefinition Height="20*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="80*"></ColumnDefinition>
-                <ColumnDefinition Width="20*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="90" HorizontalAlignment="Right" Margin="0 0 230 0" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="Black">
-                <TextBlock.Effect>
-                    <DropShadowEffect Color="Gold"/>
-                </TextBlock.Effect>Royal Casino</TextBlock>
-            <TextBlock Name="accountInfo" Grid.Row="0" Grid.Column="1" FontSize="35" FontFamily="Casino Regular" HorizontalAlignment="center" VerticalAlignment="center" Foreground="White">
-                <TextBlock.Effect>
-                    <DropShadowEffect Color="Gold"/>
-                </TextBlock.Effect></TextBlock>
-        </Grid>
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="90" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Casino Regular" Foreground="Black">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Gold"/>
+            </TextBlock.Effect>Royal Casino</TextBlock>
         <MediaElement Source="theme.mp3" LoadedBehavior="Play" Volume="0.1"></MediaElement>
         <MediaElement Name="intro" Source="intro.mp4" IsMuted="True" LoadedBehavior="Play" Grid.Row="1" Panel.ZIndex="999"></MediaElement>
         <userControls:MainMenu Grid.Row="1" x:Name="menu"></userControls:MainMenu>
