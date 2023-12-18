@@ -75,7 +75,7 @@ namespace Kasyno.Games
         }
         private void shouldEnemyHit()
         {
-            if (botScore < 16)
+            if (botScore <= 16)
             {
                 hitEnemyCard();
             }
