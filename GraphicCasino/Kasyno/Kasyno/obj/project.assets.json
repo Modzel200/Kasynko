@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\": {},
-    "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
       "projectName": "Kasyno",
-      "projectPath": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
-      "packagesPath": "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\",
-      "outputPath": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Mafisto CHEF\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,5 +1,6 @@
 ﻿using Kasyno.Logic;
 using Kasyno.View.UserControls;
+using System.Security.Principal;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Kasyno
 {
@@ -18,11 +20,12 @@ namespace Kasyno
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DispatcherTimer timer;
+        private Account account = new Account();
         public MainWindow()
         {
             InitializeComponent();
-            Account account = new Account();
-            accountInfo.Text = "Balans: " + account.getBalance();
+           // accountInfo.Text = "Balans: " + account.getBalance();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
