@@ -146,3 +146,4 @@ D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\refint\Kasy
 D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.pdb
 D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.genruntimeconfig.cache
 D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\ref\Kasyno.dll
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.sourcelink.json
