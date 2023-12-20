@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Kasyno.Merchant"
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
-        Title="Merchant" Height="450" Width="800">
+        Title="Merchant" Height="700" Width="1200">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/background.jpg">
