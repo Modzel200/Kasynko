@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Kasyno.Games;
+using Kasyno;
+using Kasyno.Merchant;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Kasyno.Logic
 {
     public class Account
@@ -30,8 +32,16 @@ namespace Kasyno.Logic
         }
         public void removeBalance(double money)
         {
-            this.accBalance -= money;
-            File.WriteAllText("account.txt",accBalance.ToString());
+            if(this.accBalance-money<0)
+            {
+                MerchantClass merchant = new MerchantClass(money);
+                merchant.Show();
+            }
+            else
+            {
+                this.accBalance -= money;
+                File.WriteAllText("account.txt", accBalance.ToString());
+            }
         }
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tDLaYB+OmmYIWfZkR/1+rzuxRQ68dqGIver1Hfs5ZssXaSTuQpEdgDXdDqQFEao1KML1Sn/9IWoDJaiaKRmeHg==",
+  "dgSpecHash": "vNz9arndueq2FJQ1guTg1bHRLIAoXw+pCH1iTR/BRqqnPcW3apasfjmAPs5QC08uSb6HBx0cj1NdtGdl3kBkWA==",
   "success": true,
   "projectFilePath": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -25,6 +25,11 @@
     <None Remove="Games\plumslots.jpg" />
     <None Remove="Games\questionmarkslots.jpg" />
     <None Remove="Games\sevenslots.jpg" />
+    <None Remove="Merchant\gem.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +37,7 @@
     <Resource Include="coinslots.png" />
     <Resource Include="Games\bjbackground.jpg" />
     <Resource Include="Games\coinslots.png" />
+    <Resource Include="Merchant\gem.gif" />
   </ItemGroup>
 
 </Project>

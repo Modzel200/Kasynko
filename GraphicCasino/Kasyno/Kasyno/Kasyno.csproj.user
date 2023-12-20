@@ -19,6 +19,9 @@
     <Compile Update="Games\Slots.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Merchant\Merchant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UserControls\MainMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Merchant\Merchant.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UserControls\MainMenu.xaml">

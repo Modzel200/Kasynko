@@ -178,3 +178,8 @@ C:\Users\user\Desktop\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyn
 C:\Users\user\Desktop\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.genruntimeconfig.cache
 C:\Users\user\Desktop\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\ref\Kasyno.dll
 F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.sourcelink.json
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.csproj.AssemblyReference.cache
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\bin\Debug\net8.0-windows\WpfAnimatedGif.dll
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.g.cs
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.baml
+F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.csproj.CopyComplete
