@@ -44,7 +44,7 @@
                 <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
                     <Button.Effect>
                         <DropShadowEffect Color="Gold"/>
-                    </Button.Effect> Zakręć</Button>
+                    </Button.Effect> Spin</Button>
                 <TextBlock Name="info" FontSize="30" FontFamily="Casino Regular" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White"></TextBlock>
             </Grid>
             <MediaElement Name="bigWin" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" LoadedBehavior="Play"></MediaElement>

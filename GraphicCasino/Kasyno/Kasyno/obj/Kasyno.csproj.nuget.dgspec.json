@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj": {}
+    "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj": {}
   },
   "projects": {
-    "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj": {
+    "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+        "projectUniqueName": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
         "projectName": "Kasyno",
-        "projectPath": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
-        "packagesPath": "C:\\Users\\Mafisto CHEF\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurs\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
+        "projectPath": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\Kasyno.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\Kasynko\\GraphicCasino\\Kasyno\\Kasyno\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mafisto CHEF\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
