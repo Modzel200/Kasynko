@@ -27,10 +27,22 @@ namespace Kasyno
             InitializeComponent();
            // accountInfo.Text = "Balans: " + account.getBalance();
         }
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Space)
+            {
+                intro.Visibility = Visibility.Hidden;
+                hideIntroButton.Visibility = Visibility.Hidden;
+                Keyboard.Focus(menu.gameListBox);
+                menu.gameListBox.Focus();
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             intro.Visibility = Visibility.Hidden;
             hideIntroButton.Visibility = Visibility.Hidden;
+            Keyboard.Focus(menu.gameListBox);
+            menu.gameListBox.Focus();
         }
     }
 }

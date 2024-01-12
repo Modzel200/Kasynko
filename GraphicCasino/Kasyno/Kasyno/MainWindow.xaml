@@ -9,6 +9,7 @@
         Title="Royal Casino" Height="1000" Width="1650" Icon="/coinslots.png"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
+        KeyDown="Window_KeyDown"
         WindowState="Maximized">
     <Grid>
         <Grid.Background>
@@ -27,7 +28,7 @@
             </TextBlock.Effect>Royal Casino</TextBlock>
         <MediaElement Source="theme.mp3" LoadedBehavior="Play" Volume="0.1"></MediaElement>
         <MediaElement Name="intro" Source="intro.mp4" IsMuted="True" LoadedBehavior="Play" Grid.Row="1" Panel.ZIndex="999"></MediaElement>
-        <userControls:MainMenu Grid.Row="1" x:Name="menu"></userControls:MainMenu>
+        <userControls:MainMenu Grid.Row="1" Focusable="True" x:Name="menu"></userControls:MainMenu>
         <Button Name="hideIntroButton" VerticalAlignment="Center" HorizontalAlignment="center" FontSize="30" Foreground="Gold" Click="Button_Click" Grid.Row="2" FontFamily="Casino Regular" Background="Black" Padding="10">Skip intro</Button>
     </Grid>
 </Window>

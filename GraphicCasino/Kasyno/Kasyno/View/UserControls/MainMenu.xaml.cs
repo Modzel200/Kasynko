@@ -21,24 +21,80 @@ namespace Kasyno.View.UserControls
     /// </summary>
     public partial class MainMenu : UserControl
     {
+        ListBox listBox;
+        ListBoxItem selectedItem;
+        int iter;
+
         public MainMenu()
         {
             InitializeComponent();
         }
-        private void gameListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        void OnLoaded(object sender, RoutedEventArgs e)
         {
-            ListBox listBox = (ListBox)sender;
-            ListBoxItem selectedItem = (ListBoxItem)listBox.SelectedItem;
-
-            if (selectedItem != null)
+            listBox = (ListBox)sender;
+            selectedItem = (ListBoxItem)listBox.SelectedItem;
+        }
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Down)
             {
-                string selectedGame = selectedItem.Content.ToString();
-                if(selectedGame=="Roulette")
+                listBox.SelectedIndex = 0;
+                listBox = (ListBox)sender;
+                listBox.Focus();
+                selectedItem = (ListBoxItem)listBox.SelectedItem;
+            }
+            if(e.Key == Key.Up)
+            {
+                listBox.SelectedIndex = this.iter;
+                listBox = (ListBox)sender;
+                listBox.Focus();
+                selectedItem = (ListBoxItem)listBox.SelectedItem;
+            }
+            if(e.Key == Key.Enter)
+            {
+                var item = ItemsControl.ContainerFromElement(sender as ListBox, e.OriginalSource as DependencyObject) as ListBoxItem;
+                if (item != null)
+                {
+                    string selectedGame = item.Content.ToString();
+                    if (selectedGame == "Roulette")
+                    {
+                        Roulette roulette = new Roulette();
+                        roulette.Show();
+                    }
+                    if (selectedGame == "Craps")
+                    {
+                        Craps craps = new Craps();
+                        craps.Show();
+                    }
+                    if (selectedGame == "BlackJack")
+                    {
+                        Blackjack blackjack = new Blackjack();
+                        blackjack.Show();
+                    }
+                    if (selectedGame == "Slots")
+                    {
+                        Slots slots = new Slots();
+                        slots.Show();
+                    }
+                    if (selectedGame == "Exit")
+                    {
+                        System.Windows.Application.Current.Shutdown();
+                    }
+                }
+            }
+        }
+        private void PlaceholdersListBox_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var item = ItemsControl.ContainerFromElement(sender as ListBox, e.OriginalSource as DependencyObject) as ListBoxItem;
+            if (item != null)
+            {
+                string selectedGame = item.Content.ToString();
+                if (selectedGame == "Roulette")
                 {
                     Roulette roulette = new Roulette();
                     roulette.Show();
                 }
-                if(selectedGame=="Craps")
+                if (selectedGame == "Craps")
                 {
                     Craps craps = new Craps();
                     craps.Show();
@@ -53,12 +109,13 @@ namespace Kasyno.View.UserControls
                     Slots slots = new Slots();
                     slots.Show();
                 }
-                if (selectedGame=="Exit")
+                if (selectedGame == "Exit")
                 {
                     System.Windows.Application.Current.Shutdown();
                 }
             }
         }
+
 
         private void gameListBox_PreviewMouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {

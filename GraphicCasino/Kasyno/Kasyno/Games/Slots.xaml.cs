@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -82,6 +83,26 @@ namespace Kasyno.Games
             }
             return 1;
         }
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Escape)
+            {
+                this.Close();
+            }
+            if(e.Key == Key.Space)
+            {
+                Button_Click(sender, e);
+            }
+            if(e.Key == Key.B)
+            {
+                bet.Focus();
+            }
+        }
+        void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            Keyboard.Focus(bet);
+            bet.Focus();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             timer = new DispatcherTimer();
@@ -125,6 +146,11 @@ namespace Kasyno.Games
                 move = 0;
                 timer.Stop();
             }
+        }
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

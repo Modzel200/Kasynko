@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kasyno.Games"
         mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
         Title="Slots" Height="700" Width="1200">
     <Grid>
         <Grid.Background>
@@ -40,7 +41,7 @@
                     <TextBlock.Effect>
                         <DropShadowEffect Color="Gold"/>
                     </TextBlock.Effect>Twoja stawka:</TextBlock>
-                <TextBox Name="bet" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
+                <TextBox Name="bet" PreviewTextInput="NumberValidationTextBox" Focusable="True" BorderBrush="Gold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" TextAlignment="Center"></TextBox>
                 <Button Height="40" Click="Button_Click" VerticalAlignment="Top" Margin="126,100,126,0" FontFamily="Casino Regular" FontSize="30" Foreground="White" BorderBrush="Gold" Background="Black">
                     <Button.Effect>
                         <DropShadowEffect Color="Gold"/>

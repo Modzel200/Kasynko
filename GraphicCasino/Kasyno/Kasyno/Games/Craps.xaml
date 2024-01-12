@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kasyno.Games"
+        KeyDown="Window_KeyDown"
         mc:Ignorable="d"
         Title="Craps" Height="700" Width="1200">
     <Grid>
@@ -40,7 +41,7 @@
                     <TextBlock.Effect>
                         <DropShadowEffect Color="Gold"/>
                     </TextBlock.Effect>Twoja stawka:</TextBlock>
-                <TextBox Name="bet" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" TextAlignment="Center"></TextBox>
+                <TextBox Name="bet" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30" Height="40px" Width="100" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" TextAlignment="Center"></TextBox>
                 <Button Height="41" Width="80px" Click="Button_Click" VerticalAlignment="Top" Margin="140,100,140,0" FontFamily="Casino Regular" FontSize="30" BorderBrush="Gold" Foreground="White" Background="Black">
                     <Button.Effect>
                         <DropShadowEffect Color="Gold"/>

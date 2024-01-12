@@ -183,3 +183,8 @@ F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\bin\Debug\net8.0-windows\WpfAnimat
 F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.g.cs
 F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.baml
 F:\GitHub\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.csproj.CopyComplete
+D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.csproj.AssemblyReference.cache
+D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.g.cs
+D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\bin\Debug\net8.0-windows\WpfAnimatedGif.dll
+D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Merchant\Merchant.baml
+D:\Kurs\Kasynko\GraphicCasino\Kasyno\Kasyno\obj\Debug\net8.0-windows\Kasyno.csproj.CopyComplete

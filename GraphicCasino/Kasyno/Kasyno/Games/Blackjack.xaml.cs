@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -55,6 +56,29 @@ namespace Kasyno.Games
             InitializeComponent();
             initList();
             accBalance.Text = "Balans: " + account.getBalance();
+        }
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
+            if (e.Key == Key.Space)
+            {
+                Button_Click(sender, e);
+            }
+            if (e.Key == Key.B)
+            {
+                initbet.Focus();
+            }
+            if(e.Key == Key.H)
+            {
+                Button_Click_Hit(sender, e);
+            }
+            if(e.Key == Key.S)
+            {
+                Button_Click_Stand(sender, e);
+            }
         }
         private void initList()
         {
@@ -235,6 +259,11 @@ namespace Kasyno.Games
             {
                 whoIsWinner();
             }
+        }
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }
