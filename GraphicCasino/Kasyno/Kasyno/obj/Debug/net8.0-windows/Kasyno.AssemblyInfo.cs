@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kasyno")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e62ac18a99480d5ed61d2490307709c86155d3ea")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Kasyno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kasyno")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
